@@ -1,344 +1,164 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
-
   <head>
-
     <meta charset="utf-8">
-
     <title>Welcome To MoonCraft!</title>
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-
-
 
 
 </head>
 
-
-
 <style >
-
-
-
 .nav-link,.navbar-brand{
-
   font-family: 'Lobster', cursive;
-
   font-size: 1.5rem;
-
 }
-
-
 
 .main{
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   width: 100%;
-
   height: 100%;
-
   background: #212121;
-
   font-family: 'Poiret One', cursive;
-
 }
-
-
 
 .card {
-
   position: relative;
-
   width: 100%;
 
-
-
   height: 100vh;
-
   padding: 1rem;
 
-
-
   max-width: 100%;
-
   border-radius: 2px;
-
   overflow: hidden;
-
   background-image: url("moon.png") no-repeat center center fixed;
-
    -webkit-background-size: cover;
-
    -moz-background-size: cover;
-
    -o-background-size: cover;
-
    background-size: cover;
-
 }
-
-
-
 
 
 .girl {
-
   position: absolute;
-
   z-index: 1;
-
   bottom: 60px;
-
   margin-left: 35%;
-
   height: 50%;
-
   width : 30vw;
 
-
-
 }
-
-
-
 
 
 .emo-1 {
-
   position: absolute;
-
   top: 40%;
-
   margin-left: 30%;
-
   width: 80px;
-
   transform: rotate(-30deg);
-
 }
-
-
 
 .emo-2 {
-
   position: absolute;
-
   top: 25%;
-
   left: 49%;
-
   width: 80px;
 
-
-
 }
-
-
 
 .emo-3 {
-
   position: absolute;
-
   top: 40%;
-
   right: 30%;
-
   width: 80px;
-
   transform: rotate(-30deg);
 
-
-
 }
-
-
 
 .emo-4 {
-
   position: absolute;
-
   bottom: 180px;
-
   margin-left: 25%;
-
   width: 80px;
-
   transform: rotate(-30deg);
-
 }
-
-
 
 .emo-5 {
-
   position: absolute;
-
   bottom:180px;
-
   right: 25%;
-
   width: 80px;
-
   transform: rotate(30deg);
-
 }
-
 .fa-1x {
-
 font-size: 1.5rem;
-
 }
-
 .navbar-toggler.toggler-example {
-
 cursor: pointer;
-
 }
-
 .dark-blue-text {
-
 color: #0A38F5;
-
 }
-
 .dark-pink-text {
-
 color: #AC003A;
-
 }
-
 .dark-amber-text {
-
 color: #ff6f00;
-
 }
-
 .dark-teal-text {
-
 color: #004d40;
-
 }
-
-
 
 </style>
-
 <nav class="navbar navbar-expand-lg navbar-dark  shadow fixed-top">
-
   <div class="container">
-
     <a class="navbar-brand" href="#">MoonCraft</a>
-
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-
    <span class="navbar-toggler-icon"></span>
-
  </button>
 
-
-
     <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-
       <ul class="navbar-nav ml-auto">
-
         <li class="nav-item active">
-
           <a class="nav-link" href="index.html">Welcome
-
                 <span class="sr-only">(current)</span>
-
               </a>
-
         </li>
-
         <li class="nav-item">
-
           <a class="nav-link" href="gallery.html">Gallery</a>
-
         </li>
-
         <li class="nav-item">
-
           <a class="nav-link" href="wishes.html">Wishes</a>
-
         </li>
-
         <li class="nav-item">
-
           <a class="nav-link" href="MoonlightsSurprise.html">Surprise!</a>
-
           <li class="nav-item ">
-
               <a class="nav-link" href="developers.html">Developers</a>
-
             </li>
-
         </li>
-
       </ul>
-
     </div>
-
   </div>
-
 </nav>
 
-
-
-</br> 
-<div class="alert alert-warning alert-dismissible fade show" role="alert">
-    <strong>For better user experience,</strong> please view the website from your laptop/PC or enable landscape mode while viewing from phone
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
-
-
-
-
-
-
-
 <body class = "main">
-
   <div class="card">
-
     <img class="girl" src="Girl.png" alt="Girl">
 
-
-
     <img class="emo-1" src="chicken-face.png" alt="Emoticon1">
-
     <img class="emo-2" src="minecraft-clipart.png" alt="Emoticon2">
-
     <img class="emo-3" src="pig.jpg" alt="Emoticon3">
-
     <img class="emo-4" src="MagmaCubeNew.png" alt="Emoticon4">
-
     <img class="emo-5" src="face.jpg" alt="Emoticon5">
-
   </div>
-
 </body>
-
-
 
 </html>
