@@ -4,11 +4,86 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="wishes.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
 
   </head>
+  <style>
+
+  body{
+    background-image: url("fairy.jpg");
+
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+  }
+
+  .card-text{
+      font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+    color:white;
+
+  }
+  .card-title{
+      color:white;
+  }
+  .card-text-1{
+    font-size: 1rem;
+      color:white;
+  }
+  .nav-link,.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+  }
+  /* for demo purposes */
+  .card {
+    margin: 100px 10px;
+      font-family: 'Lobster', cursive;
+      font-size: 1rem;
+        background-color: #DAA520;
+
+  }
+  H4{
+    text-align: center;
+  }
+  /* Flip Cards CSS */
+  .card-container {
+    display: grid;
+    perspective: 700px;
+    width: 450px;
+    height: 500px;
+
+  }
+
+  .card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+  }
+
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+
+  .front {
+    grid-area: frontAndBack;
+  }
+
+  .back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+  }
+
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+
+  </style>
   <body>
 
 
@@ -24,19 +99,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Welcome
+          <a class="nav-link" href="index.html">Welcome
 
               </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="gallery.html">Gallery</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Wishes</a>
           <span class="sr-only">(current)</span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Surprise!</a>
+          <a class="nav-link" href="MoonlightsSurprise.html">Surprise!</a>
         </li>
       </ul>
     </div>
@@ -77,7 +152,7 @@
         <div class="card front">
           <span class="fa fa-4x fa-smile-o text-center"></span>
           <div class="card-block">
-            <img src="anikett44.png" alt="">
+            <img src="anikett44.png" alt="" width="330px" height = "360px">
           </div>
         </div>
         <!-- End Card 2 Front -->
@@ -87,7 +162,7 @@
 
           <div class="card-block">
             <h4 class="card-title">Anikett</h4>
-            <p class="card-text">HAPPY BIRTHDAY MOONLIGHT CHAANDROSHNI MAHIRAH KHAN FROM RAEES I HOPE YOU HAVE THE BEST BIRTHDAY EVER STAY BLESSED STAY SAFE AND STAY HAPPY MUCH LOVE MWAH XOXO UR OLD</p>
+            <p class="card-text">"HAPPY BIRTHDAY MOONLIGHT CHAANDROSHNI I HOPE YOU HAVE THE BEST BIRTHDAY EVER STAY BLESSED STAY SAFE AND STAY HAPPY MUCH LOVE MWAH XOXO UR OLD"</p>
           </div>
         </div>
         <!-- End Card 2 Back -->
@@ -187,7 +262,7 @@
         <div class="card front">
           <span class="fa fa-4x fa-smile-o text-center"></span>
           <div class="card-block">
-            <img src="kirito.png" alt="" height="330px" width=330px>
+            <img src="kirito.png" alt="" height="350px" width=330px>
           </div>
         </div>
         <!-- End Card 6 Front -->
@@ -196,7 +271,8 @@
         <div class="card back text-center">
           <div class="card-block">
             <h4 class="card-title">Kiri</h4>
-            <p class="card-text">test</p>
+            <p class="card-text-1">
+Ohayo Moon Chan. It's me kirito. Our Roller coaster ride began with you inviting me to be your cpr prom partner and... I still can't believe that our meeting happened to this day. We enjoyed all those virtual wholesome moments and those UwU vibes define nostalgia for me. A special thanks for making my bday memorable this year by planning a  party with this luvly community. You are truly a gem of a kind. I always enjoy chatting with you and I am so glad that we met! Enjoy this special day in ur absolute berserk mode and here's wishing  you have a fantabulous year ahead. Stay blessed</p>
         <!-- End Card 6 Back -->
       </div>
     </div>
@@ -208,177 +284,154 @@
 
     <div class="container">
       <div class="row">
-              <!-- Card 1 -->
         <div class="col-md-4 card-container">
           <div class="card-flip">
             <!-- Card 1 Front -->
             <div class="card front">
               <span class="fa fa-4x fa-smile-o text-center"></span>
               <div class="card-block">
-                <h4 class="card-title text-center">Front Card Title</h4>
-                <h6 class="card-subtitle mb-2 text-muted text-center">Front Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <img src="mob.png" alt="" height="350px" width=330px>
               </div>
             </div>
-            <!-- End Card 1 Front -->
+            <!-- End Card 6 Front -->
 
-            <!-- Card 1 Back -->
-            <div class="card back">
+            <!-- Card 6 Back -->
+            <div class="card back text-center">
               <div class="card-block">
-                <h4 class="card-title">Back Card Title</h4>
-                <h6 class="card-subtitle mb-2 text-muted">Back Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="card-link">Card link</a>
-                <a href="#" class="card-link">Another link</a>
-              </div>
-            </div>
-            <!-- End Card 1 Back -->
+                <h4 class="card-title">Mob</h4>
+                <p class="card-text-1">
+    Dear Moonchi ! I kno we arent seeing each other a lot on cpr but we know each other within our circle. We mat by meeting friends. You are a very polite person and you are naughty sometimes - rarely tho, but still i think you and Alipoo make me feal very happy when im around yall...being semi-new on cpr. Ty for all the help! I wish you nothing but the best in life !! Take it easy and PARTEYY HAARD!     - your friendly penguin neighbourhood friend Mobbi </p>
+            <!-- End Card 6 Back -->
           </div>
         </div>
-
-  <div class="col-md-4 card-container">
-
-      <div class="card-flip">
-        <!-- Card 2 Front -->
-        <div class="card front">
-          <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-          <div class="card-block">
-            <h4 class="card-title">Front Card Title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <!-- End Card 2 Front -->
-
-        <!-- Card 2 Back -->
-        <div class="card back">
-          <div class="card-header">
-            Featured
-          </div>
-          <div class="card-block">
-            <h4 class="card-title">Special title treatment</h4>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-        <!-- End Card 2 Back -->
       </div>
     </div>
-    <div class="col-md-4 card-container">
 
-        <div class="card-flip">
-          <!-- Card 2 Front -->
-          <div class="card front">
-            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-            <div class="card-block">
-              <h4 class="card-title">Front Card Title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <!-- End Card 2 Front -->
 
-          <!-- Card 2 Back -->
-          <div class="card back">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-block">
-              <h4 class="card-title">Special title treatment</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <!-- End Card 2 Back -->
-        </div>
-      </div>
-</div>
-</div>
-<div class="container">
-  <div class="row">
-          <!-- Card 1 -->
     <div class="col-md-4 card-container">
       <div class="card-flip">
         <!-- Card 1 Front -->
         <div class="card front">
           <span class="fa fa-4x fa-smile-o text-center"></span>
           <div class="card-block">
-            <h4 class="card-title text-center">Front Card Title</h4>
-            <h6 class="card-subtitle mb-2 text-muted text-center">Front Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <img src="lullaby.png" alt="" height="350px" width=330px>
           </div>
         </div>
-        <!-- End Card 1 Front -->
+        <!-- End Card 6 Front -->
 
-        <!-- Card 1 Back -->
-        <div class="card back">
+        <!-- Card 6 Back -->
+        <div class="card back text-center">
           <div class="card-block">
-            <h4 class="card-title">Back Card Title</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Back Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        <!-- End Card 1 Back -->
+            <h4 class="card-title">Lullaby</h4>
+            <p class="card-text-1">
+              where do i start with you punk!!! omg moon happy birthday i lovelovelove you so much omggg!!! you deserve the best day there is you sweetpea, you’re so funny and caring and know how to make me chuckle like an idiot :sob: you’re also real smart and dedicated which i admire omg you’re just perfect ok :rage: have the best birthday ever sweetie i’m sending my best wishes!! i’m so glad we met and became such good friends omg you’re baso like a sister to me!! love you
+ </p>
+        <!-- End Card 6 Back -->
       </div>
     </div>
-    <div class="col-md-4 card-container">
+    </div>
+    </div>
 
-        <div class="card-flip">
-          <!-- Card 2 Front -->
-          <div class="card front">
-            <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
-            <div class="card-block">
-              <h4 class="card-title">Front Card Title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <!-- End Card 2 Front -->
-
-          <!-- Card 2 Back -->
-          <div class="card back">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-block">
-              <h4 class="card-title">Special title treatment</h4>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <!-- End Card 2 Back -->
-        </div>
-      </div>
-      <div class="col-md-4 card-container">
-
+        <!-- End Card 2 Back -->
+        <div class="col-md-4 card-container">
           <div class="card-flip">
-            <!-- Card 2 Front -->
+            <!-- Card 1 Front -->
             <div class="card front">
-              <img src="https://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" class="card-img-top img-fluid">
+              <span class="fa fa-4x fa-smile-o text-center"></span>
               <div class="card-block">
-                <h4 class="card-title">Front Card Title</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <img src="Francesca7.png" alt="" height="350px" width=330px>
               </div>
             </div>
-            <!-- End Card 2 Front -->
+            <!-- End Card 6 Front -->
 
-            <!-- Card 2 Back -->
-            <div class="card back">
-              <div class="card-header">
-                Featured
-              </div>
+            <!-- Card 6 Back -->
+            <div class="card back text-center">
               <div class="card-block">
-                <h4 class="card-title">Special title treatment</h4>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <!-- End Card 2 Back -->
+                <h4 class="card-title">Fran</h4>
+                <p class="card-text-1">
+                  Have a blessed day moon. It was really nice knowing you and having you around. You are fun and amazing. I truly appreciate whatever you've done for me and others in here. I will cherish these memories. Thank you. Stay safe and sound
+     </p>
+            <!-- End Card 6 Back -->
           </div>
         </div>
+        </div>
+        </div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+          <!-- Card 1 -->
+          <div class="col-md-4 card-container">
+            <div class="card-flip">
+              <!-- Card 1 Front -->
+              <div class="card front">
+                <span class="fa fa-4x fa-smile-o text-center"></span>
+                <div class="card-block">
+                  <img src="BDEEOWEOWEOW.png" alt="" height="350px" width=330px>
+                </div>
+              </div>
+              <!-- End Card 6 Front -->
+
+              <!-- Card 6 Back -->
+              <div class="card back text-center">
+                <div class="card-block">
+                  <h4 class="card-title">Meow</h4>
+                  <p class="card-text-1">
+                    HAPPY BIRTHDAY MOON
+it was great getting to know you. I hope you have a blessed birthday with lots of cake and presents. Enjoy your day
+        </p>
+              <!-- End Card 6 Back -->
+            </div>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-md-4 card-container">
+            <div class="card-flip">
+              <!-- Card 1 Front -->
+              <div class="card front">
+                <span class="fa fa-4x fa-smile-o text-center"></span>
+                <div class="card-block">
+                  <img src="newdenny.png" alt="" height="350px" width=330px>
+                </div>
+              </div>
+              <!-- End Card 6 Front -->
+
+              <!-- Card 6 Back -->
+              <div class="card back text-center">
+                <div class="card-block">
+                  <h4 class="card-title">Denny</h4>
+                  <p class="card-text-1">
+                HAPPY BIRTHDAY MOOON!!! Ur one of the sweetest loveliest and amazing people I know And I’m so glad I can call u a friend. Have an amazing day moon ily!!!
+        </p>
+              <!-- End Card 6 Back -->
+            </div>
+          </div>
+          </div>
+          </div>
+          <div class="col-md-4 card-container">
+            <div class="card-flip">
+              <!-- Card 1 Front -->
+              <div class="card front">
+                <span class="fa fa-4x fa-smile-o text-center"></span>
+                <div class="card-block">
+                  <img src="cocopuffss.jpg" alt="" height="350px" width=330px>
+                </div>
+              </div>
+              <!-- End Card 6 Front -->
+
+              <!-- Card 6 Back -->
+              <div class="card back text-center">
+                <div class="card-block">
+                  <h4 class="card-title">Coco</h4>
+                  <p class="card-text-1">
+                MOON happy happy birthday! You're such a great friend to me and i love u sooo much! I'm so thankful to Peek for introducing me to you, you're amazing. We've had so many great moments together and I hope you know how much i value you as a friend Have a wonderful day and life
+        </p>
+              <!-- End Card 6 Back -->
+            </div>
+          </div>
+          </div>
+          </div>
 </div>
 </div>
 <div class="container">
@@ -392,7 +445,7 @@
     <div class="card front">
       <span class="fa fa-4x fa-smile-o text-center"></span>
       <div class="card-block">
-        <img src="saat.png" alt="">
+        <img src="ned18222.png" alt="">
       </div>
     </div>
     <!-- End Card 4 Front -->
@@ -400,8 +453,8 @@
     <!-- Card 4 Back -->
     <div class="card back text-center">
       <div class="card-block">
-        <h4 class="card-title">Saat</h4>
-        <p class="card-text">HAPPY BIRTHDAY MOON AKA MAHIRA It's me saat, I remember the first day we met , I was with peek and we met in some like igloo party where you were collecting ppl for igloo stamps for everyone. I think that was the first day when peek met you too. yeah so I don't wanna make it very cringe cuz we haven't talked much haha and yeah I wish you a happy birthday and hope you succeed in your life and achieve your dream goals. </p>
+        <h4 class="card-title">Ned</h4>
+        <p class="card-text">Happy birthday Moon!  </p>
 
       </div>
     </div>
@@ -417,7 +470,7 @@
     <div class="card front">
       <span class="fa fa-4x fa-smile-o text-center"></span>
       <div class="card-block">
-        <img src="peek.png" alt=""height="330px">
+        <img src="GoldenBmanz.png" alt=""height="330px">
       </div>
     </div>
     <!-- End Card 5 Front -->
@@ -425,8 +478,8 @@
     <!-- Card 5 Back -->
     <div class="card back text-center">
       <div class="card-block">
-        <h4 class="card-title">Peek</h4>
-        <p class="card-text">test</p>
+        <h4 class="card-title">GoldenBmanz</h4>
+        <p class="card-text">Happy birthday moonlighty! may you host another dr phil talk show again!</p>
 
       </div>
     </div>
@@ -444,7 +497,7 @@
     <div class="card front">
       <span class="fa fa-4x fa-smile-o text-center"></span>
       <div class="card-block">
-        <img src="kirito.png" alt="" height="330px" width=330px>
+        <img src="calanit.png" alt="" height="330px" width=330px>
       </div>
     </div>
     <!-- End Card 6 Front -->
@@ -452,8 +505,8 @@
     <!-- Card 6 Back -->
     <div class="card back text-center">
       <div class="card-block">
-        <h4 class="card-title">Kiri</h4>
-        <p class="card-text">test</p>
+        <h4 class="card-title">Calanit</h4>
+        <p class="card-text">Happy birthday Moonlights! Have an amazing day!</p>
     <!-- End Card 6 Back -->
   </div>
 </div>
@@ -466,7 +519,7 @@
     <div class="card front">
       <span class="fa fa-4x fa-smile-o text-center"></span>
       <div class="card-block">
-        <img src="peek.png" alt=""height="330px">
+        <img src="azerty.png" alt=""height="330px">
       </div>
     </div>
     <!-- End Card 5 Front -->
@@ -474,8 +527,8 @@
     <!-- Card 5 Back -->
     <div class="card back text-center">
       <div class="card-block">
-        <h4 class="card-title">Peek</h4>
-        <p class="card-text">test</p>
+        <h4 class="card-title">Azerty</h4>
+        <p class="card-text">Happy birthday Moon! Enjoy your day and these nice wishes </p>
 
       </div>
     </div>
