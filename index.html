@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 
 </head>
@@ -33,13 +35,15 @@
 
   height: 100vh;
   padding: 1rem;
-  background-image: url("moon.png");
+
   max-width: 100%;
   border-radius: 2px;
   overflow: hidden;
-  background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
+  background-image: url("moon.png") no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 
@@ -94,15 +98,34 @@
   width: 80px;
   transform: rotate(30deg);
 }
+.fa-1x {
+font-size: 1.5rem;
+}
+.navbar-toggler.toggler-example {
+cursor: pointer;
+}
+.dark-blue-text {
+color: #0A38F5;
+}
+.dark-pink-text {
+color: #AC003A;
+}
+.dark-amber-text {
+color: #ff6f00;
+}
+.dark-teal-text {
+color: #004d40;
+}
 
 </style>
 <nav class="navbar navbar-expand-lg navbar-dark  shadow fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">MoonCraft</a>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarSupportedContent">
-  				<span class="navbar-toggler-icon"></span>
-  			</button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Welcome
@@ -125,13 +148,13 @@
 
 <body class = "main">
   <div class="card">
-    <img class="girl" src="https://i.ibb.co/MsP9jY0/Girl.png" alt="Girl">
+    <img class="girl" src="Girl.png" alt="Girl">
 
-    <img class="emo-1" src="https://www.clipartmax.com/png/middle/59-590257_minecraft-chicken-face-minecraft-chicken-face-pixel-art.png" alt="Emoticon1">
-    <img class="emo-2" src="https://webstockreview.net/images/minecraft-clipart-free-minecraft-17.png" alt="Emoticon2">
-    <img class="emo-3" src="https://i.pinimg.com/originals/bd/b4/be/bdb4be0469cff3820263b6ed4fe79f41.jpg" alt="Emoticon3">
-    <img class="emo-4" src="https://vignette.wikia.nocookie.net/minecraft/images/4/42/MagmaCubeNew.png/revision/latest?cb=20190905234811" alt="Emoticon4">
-    <img class="emo-5" src="https://i.pinimg.com/originals/1c/d1/d8/1cd1d84044588e274829289c5f54ff1c.jpg" alt="Emoticon5">
+    <img class="emo-1" src="chicken-face.png" alt="Emoticon1">
+    <img class="emo-2" src="minecraft-clipart.png" alt="Emoticon2">
+    <img class="emo-3" src="pig.jpg" alt="Emoticon3">
+    <img class="emo-4" src="MagmaCubeNew.png" alt="Emoticon4">
+    <img class="emo-5" src="face.jpg" alt="Emoticon5">
   </div>
 </body>
 
